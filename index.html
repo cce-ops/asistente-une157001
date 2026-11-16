@@ -49,6 +49,45 @@
     <ul id="infoIni"></ul>
     <p class="hint">Los documentos se descomponen en capítulos y apartados numerados según UNE 50132. En cada volumen debe figurar su título y número de volumen.</p>
   </div>
+  <div class="card">
+    <h2>Generador de encabezado del proyecto (4.2)</h2>
+    <p class="hint">Rellena los datos y obtén el bloque de información inicial que debe figurar al inicio del proyecto. Copia el resultado en tu documento.</p>
+    <div class="row">
+      <label class="fld"><span>Título del proyecto</span><input id="hTitulo" type="text" placeholder="Ej. Proyecto de instalación eléctrica de baja tensión"></label>
+      <label class="fld"><span>Código o referencia de identificación</span><input id="hCodigo" type="text" placeholder="Ej. PI-2024-017"></label>
+    </div>
+    <div class="row">
+      <label class="fld"><span>Organismo u organismos a los que se dirige</span><input id="hOrg" type="text" placeholder="Ej. Ayuntamiento de ..."></label>
+      <label class="fld"><span>Promotor (nombre y apellidos)</span><input id="hProm" type="text" placeholder="Ej. Juan Pérez García"></label>
+    </div>
+    <div class="row">
+      <label class="fld"><span>Documento de identidad del promotor</span><input id="hPromDni" type="text" placeholder="DNI/NIF"></label>
+      <label class="fld"><span>Emplazamiento (dirección y población)</span><input id="hEmp" type="text" placeholder="Ej. Calle Mayor 1, Madrid"></label>
+    </div>
+    <div class="row">
+      <label class="fld"><span>Coordenadas UTM (si procede)</span><input id="hUtm" type="text" placeholder="Ej. 30T 440000 4470000"></label>
+      <label class="fld"><span>Organización encargada (razón social)</span><input id="hEmpOrg" type="text" placeholder="Ej. Ingeniería XYZ S.L."></label>
+    </div>
+    <div class="row">
+      <label class="fld"><span>CIF de la organización</span><input id="hCif" type="text" placeholder="B-12345678"></label>
+      <label class="fld"><span>Dirección de la organización</span><input id="hDirOrg" type="text" placeholder="Dirección, teléfono, fax, correo"></label>
+    </div>
+    <div class="row">
+      <label class="fld"><span>Proyectista (nombre y apellidos)</span><input id="hProy" type="text" placeholder="Ej. María López Ruiz"></label>
+      <label class="fld"><span>Titulación del proyectista</span><input id="hTit" type="text" placeholder="Ej. Ingeniero Industrial"></label>
+    </div>
+    <div class="row">
+      <label class="fld"><span>Colegio o entidad</span><input id="hCol" type="text" placeholder="Ej. COGITI Madrid"></label>
+      <label class="fld"><span>Documento de identidad del proyectista</span><input id="hProyDni" type="text" placeholder="DNI/NIF"></label>
+    </div>
+    <label class="fld">
+      <span>Domicilio profesional del proyectista (teléfono, fax, correo electrónico)</span>
+      <input id="hDomProy" type="text" placeholder="Dirección, teléfono, fax, correo">
+    </label>
+    <button type="button" class="btn primary" id="btnGenEnc">Generar encabezado</button>
+    <button type="button" class="btn" id="btnCopiarEnc">Copiar</button>
+    <textarea id="hOut" rows="14" style="width:100%;margin-top:10px;font-family:monospace;font-size:.85rem;padding:10px;border:1px solid var(--line);border-radius:9px"></textarea>
+  </div>
 </section>
 
 <!-- ============ MEMORIA ============ -->

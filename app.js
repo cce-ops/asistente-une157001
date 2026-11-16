@@ -148,6 +148,28 @@ $("#btnResetChecks").addEventListener("click", () => { setDocChecked([]); render
 $("#btnImprimir").addEventListener("click", () => window.print());
 renderChecklist();
 
+/* ---------- Generador de encabezado del proyecto (4.2) ---------- */
+$("#btnGenEnc").addEventListener("click", () => {
+  const v = (id) => ($("#" + id).value || "").trim();
+  const lines = [];
+  lines.push(v("hTitulo") || "TÍTULO DEL PROYECTO");
+  if (v("hCodigo")) lines.push(`Código o referencia de identificación: ${v("hCodigo")}`);
+  lines.push("");
+  if (v("hOrg")) lines.push(`Organismo u organismos a los que se dirige el proyecto: ${v("hOrg")}`);
+  if (v("hProm")) lines.push(`Promotor: ${v("hProm")}${v("hPromDni") ? " (DNI/NIF: " + v("hPromDni") + ")" : ""}`);
+  if (v("hEmp")) lines.push(`Emplazamiento: ${v("hEmp")}${v("hUtm") ? " — Coordenadas UTM: " + v("hUtm") : ""}`);
+  if (v("hEmpOrg")) lines.push(`Organización encargada de elaborar el proyecto: ${v("hEmpOrg")}${v("hCif") ? " (CIF: " + v("hCif") + ")" : ""}`);
+  if (v("hDirOrg")) lines.push(`Datos de la organización: ${v("hDirOrg")}`);
+  if (v("hProy")) lines.push(`Proyectista: ${v("hProy")}${v("hTit") ? ", " + v("hTit") : ""}${v("hCol") ? " — " + v("hCol") : ""}${v("hProyDni") ? " (DNI/NIF: " + v("hProyDni") + ")" : ""}`);
+  if (v("hDomProy")) lines.push(`Domicilio profesional del proyectista: ${v("hDomProy")}`);
+  $("#hOut").value = lines.join("\n");
+});
+
+$("#btnCopiarEnc").addEventListener("click", async () => {
+  try { await navigator.clipboard.writeText($("#hOut").value); $("#btnCopiarEnc").textContent = "Copiado"; setTimeout(() => $("#btnCopiarEnc").textContent = "Copiar", 1500); }
+  catch (e) { $("#btnCopiarEnc").textContent = "No se pudo copiar"; }
+});
+
 /* ---------- Normativa ---------- */
 $("#listaNormas").innerHTML =
   NORMAS.map((n) => `<li><a href="${n.u}" target="_blank" rel="noopener">${n.t}</a></li>`).join("");
