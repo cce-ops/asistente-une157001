@@ -175,7 +175,7 @@ const VERIF_BLOQUES = [
   { bloque: "Planos", items: [
     "Índice de planos con su ubicación",
     "Información gráfica, alfanumérica, de códigos y de escala en cada plano",
-    "Representación según normas UNE/ISO citadas en § 8.2"
+    "Representación según normas UNE/ISO citadas en 8.2"
   ] },
   { bloque: "Pliego de condiciones", items: [
     "Índice del pliego",
@@ -194,7 +194,7 @@ const VERIF_BLOQUES = [
 /* ---------- Documentación mínima (checklist) ---------- */
 const DOC_GRUPOS = [
   {
-    grupo: "A. Estructura documental (§ 4.1)",
+    grupo: "A. Estructura documental (4.1)",
     items: [
       "Título e identificación del proyecto",
       "Índice",
@@ -208,7 +208,7 @@ const DOC_GRUPOS = [
     ]
   },
   {
-    grupo: "B. Memoria (§ 6.2)",
+    grupo: "B. Memoria (6.2)",
     items: [
       "1.1 Objeto", "1.2 Alcance", "1.3 Antecedentes",
       "1.4 Normas y referencias (1.4.1 a 1.4.5)",
@@ -221,7 +221,7 @@ const DOC_GRUPOS = [
     ]
   },
   {
-    grupo: "C. Anexos (§ 7.2)",
+    grupo: "C. Anexos (7.2)",
     items: [
       "Índice de anexos (si volumen distinto)",
       "Documentación de partida",
@@ -233,7 +233,7 @@ const DOC_GRUPOS = [
     ]
   },
   {
-    grupo: "D. Planos, pliego, mediciones y presupuesto (§ 8 a 11)",
+    grupo: "D. Planos, pliego, mediciones y presupuesto (8 a 11)",
     items: [
       "Índice de planos y planos con información gráfica, alfanumérica, de códigos y escala",
       "Índice del pliego y contenido (a) a (e)",
@@ -242,7 +242,7 @@ const DOC_GRUPOS = [
     ]
   },
   {
-    grupo: "E. Requisitos generales de presentación (§ 4.2)",
+    grupo: "E. Requisitos generales de presentación (4.2)",
     items: [
       "Título, código, tipo de documento, número de página, total de páginas y fecha en todas las páginas",
       "Título y número de volumen (si hay varios volúmenes)",
