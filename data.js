@@ -1,6 +1,6 @@
 /* =========================================================================
-   data.js — UNE 157001:2014
-   Fuente: Norma UNE 157001:2014, AENOR, junio 2014 (15 páginas)
+   data.js — <strong>UNE 157001</strong>:2014
+   Fuente: Norma <strong>UNE 157001</strong>:2014, AENOR, junio 2014 (15 páginas)
    "Criterios generales para la elaboración formal de los documentos que constituyen un proyecto técnico"
    ========================================================================= */
 
@@ -16,20 +16,20 @@ const DOCUMENTOS = [
 ];
 
 const REQ_GEN = [
-  "En todas las páginas del proyecto debe figurar: el título, el código o referencia de identificación, el tipo de documento («Índice», «Memoria», «Anexos», etc.), el número de página, el número total de páginas y la fecha.",
-  "Si el proyecto dispone de diversos volúmenes, en cada uno de ellos se debe incluir, además, su título y número de volumen.",
-  "El proyecto debe ser redactado de forma clara, concisa, concreta y con suficiente amplitud y detalle para que queden determinados todos los aspectos que interesan al destinatario, sin necesidad de solicitar aclaraciones al autor.",
+  "En todas las páginas del proyecto <strong>debe</strong> figurar: el título, el código o referencia de identificación, el tipo de documento («Índice», «Memoria», «Anexos», etc.), el número de página, el número total de páginas y la fecha.",
+  "Si el proyecto dispone de diversos volúmenes, en cada uno de ellos se <strong>debe</strong> incluir, además, su título y número de volumen.",
+  "El proyecto <strong>debe</strong> ser redactado de forma clara, concisa, concreta y con suficiente amplitud y detalle para que queden determinados todos los aspectos que interesan al destinatario, sin necesidad de solicitar aclaraciones al autor.",
   "Lenguaje claro, preciso, libre de vaguedades y términos ambiguos, coherente con la terminología empleada en los distintos capítulos y apartados; mínima calidad literaria.",
-  "La primera vez que se utilice un acrónimo o abreviatura en el texto se debe presentar entre paréntesis y a continuación de la palabra o texto completo al que reemplazará.",
+  "La primera vez que se utilice un acrónimo o abreviatura en el texto se <strong>debe</strong> presentar entre paréntesis y a continuación de la palabra o texto completo al que reemplazará.",
   "El uso de la forma «debe» indica requisitos obligatorios; las sugerencias no obligatorias se expresan mediante el tiempo condicional o subjuntivo («debería»).",
-  "Cada documento se estructura en capítulos y apartados numerados según UNE 50132.",
-  "Cuando proceda, deben considerarse los requisitos relacionados con la propiedad intelectual del proyecto (autor o competencias de los colegios profesionales según la legislación vigente)."
+  "Cada documento se estructura en capítulos y apartados numerados según <strong>UNE 50132</strong>.",
+  "Cuando proceda, <strong>deben</strong> considerarse los requisitos relacionados con la propiedad intelectual del proyecto (autor o competencias de los colegios profesionales según la legislación vigente)."
 ];
 
 const INFO_INI = [
   "El título y su código o referencia de identificación.",
   "El nombre del organismo u organismos a los que se dirige el proyecto.",
-  "El nombre, apellidos y documento de identidad del promotor del proyecto (en nombre propio o en representación de otra persona física o jurídica, cuyos datos también deben figurar).",
+  "El nombre, apellidos y documento de identidad del promotor del proyecto (en nombre propio o en representación de otra persona física o jurídica, cuyos datos también <strong>deben</strong> figurar).",
   "Si el objeto contempla un emplazamiento geográfico concreto: dirección y población, y, si procede, coordenadas UTM.",
   "El nombre de la organización, razón social o persona jurídica que ha recibido el encargo de elaborar el proyecto, con CIF, dirección, teléfono, fax, correo electrónico u otro identificador profesional (salvo los cuya publicidad no sea legalmente procedente).",
   "El nombre y apellidos del proyectista, su titulación y, en su caso, colegio o entidad a la que pertenece, documento de identidad, domicilio profesional, teléfono, fax, correo electrónico u otro identificador profesional."
@@ -37,22 +37,22 @@ const INFO_INI = [
 
 /* ---------- 6 Memoria ---------- */
 const MEMORIA_CAPS = [
-  { id: "1.1", titulo: "Objeto", texto: "Se debe indicar el objetivo del proyecto y su justificación." },
-  { id: "1.2", titulo: "Alcance", texto: "Se debe indicar el ámbito de aplicación del proyecto." },
-  { id: "1.3", titulo: "Antecedentes", texto: "Se deben indicar los condicionantes de partida: permisos o legalizaciones previas, ampliación, rehabilitación o reforma, cambio de actividad o uso, etc." },
-  { id: "1.4", titulo: "Normas y referencias", texto: "Se deben relacionar únicamente los documentos citados en los distintos apartados de la memoria.", sub: [
-    ["1.4.1 Disposiciones legales y normas aplicadas", "Referencias de las disposiciones legales (leyes, reglamentos, ordenanzas, normas de obligado cumplimiento por su inclusión en disposiciones legales) y de las normas que se deben tener en cuenta para la realización del proyecto."],
+  { id: "1.1", titulo: "Objeto", texto: "Se <strong>debe</strong> indicar el objetivo del proyecto y su justificación." },
+  { id: "1.2", titulo: "Alcance", texto: "Se <strong>debe</strong> indicar el ámbito de aplicación del proyecto." },
+  { id: "1.3", titulo: "Antecedentes", texto: "Se <strong>deben</strong> indicar los condicionantes de partida: permisos o legalizaciones previas, ampliación, rehabilitación o reforma, cambio de actividad o uso, etc." },
+  { id: "1.4", titulo: "Normas y referencias", texto: "Se <strong>deben</strong> relacionar únicamente los documentos citados en los distintos apartados de la memoria.", sub: [
+    ["1.4.1 Disposiciones legales y normas aplicadas", "Referencias de las disposiciones legales (leyes, reglamentos, ordenanzas, normas de obligado cumplimiento por su inclusión en disposiciones legales) y de las normas que se <strong>deben</strong> tener en cuenta para la realización del proyecto."],
     ["1.4.2 Programas de cálculo", "Relación de programas, modelos u otras herramientas utilizadas para desarrollar los diversos cálculos del proyecto."],
     ["1.4.3 Plan de gestión de la calidad aplicado durante la redacción", "Procesos específicos utilizados para asegurar la calidad durante la realización del proyecto."],
     ["1.4.4 Bibliografía", "Libros, revistas u otros textos que el autor considere de interés para justificar las soluciones adoptadas."],
     ["1.4.5 Otras referencias", "Referencias no relacionadas en los apartados anteriores, de interés para la comprensión y materialización del proyecto."]
   ] },
-  { id: "1.5", titulo: "Definiciones y abreviaturas", texto: "Se deben relacionar todas las definiciones, abreviaturas, etc. utilizadas y su significado." },
-  { id: "1.6", titulo: "Requisitos de diseño", texto: "Se deben describir las bases y datos de partida que se derivan del cliente; del emplazamiento y su entorno socio-económico y ambiental; de los estudios realizados encaminados a la definición de la solución adoptada; y de las interfaces con otros sistemas o elementos externos al proyecto u otros que condicionan las soluciones técnicas." },
-  { id: "1.7", titulo: "Análisis de soluciones", texto: "Se deben indicar las distintas alternativas estudiadas, qué caminos se han seguido para llegar a ellas, ventajas e inconvenientes de cada una y cuál es la solución finalmente elegida, junto con su justificación en función de la legislación y la reglamentación y normativa aplicables." },
-  { id: "1.8", titulo: "Resultados finales", texto: "Se debe describir el producto, obra, edificio, instalación y servicio según la solución elegida, indicando cuáles son sus características definitorias y haciendo referencia a los planos y otros elementos del proyecto que lo definen." },
-  { id: "1.9", titulo: "Planificación", texto: "En relación al proceso de materialización del proyecto, se deben definir las diferentes etapas, metas o hitos a alcanzar, plazos de entrega y cronogramas o gráficos de programación correspondientes." },
-  { id: "1.10", titulo: "Orden de prioridad entre los documentos", texto: "El autor del proyecto, frente a posibles discrepancias, debe establecer el orden de prioridad de los documentos. Si no se especifica otra cosa, el orden de prioridad debe ser: 1 Planos; 2 Pliego de condiciones; 3 Presupuesto; 4 Memoria. (En función del tipo de proyecto se debe adaptar el orden y los documentos según la legislación específica aplicable.)" }
+  { id: "1.5", titulo: "Definiciones y abreviaturas", texto: "Se <strong>deben</strong> relacionar todas las definiciones, abreviaturas, etc. utilizadas y su significado." },
+  { id: "1.6", titulo: "Requisitos de diseño", texto: "Se <strong>deben</strong> describir las bases y datos de partida que se derivan del cliente; del emplazamiento y su entorno socio-económico y ambiental; de los estudios realizados encaminados a la definición de la solución adoptada; y de las interfaces con otros sistemas o elementos externos al proyecto u otros que condicionan las soluciones técnicas." },
+  { id: "1.7", titulo: "Análisis de soluciones", texto: "Se <strong>deben</strong> indicar las distintas alternativas estudiadas, qué caminos se han seguido para llegar a ellas, ventajas e inconvenientes de cada una y cuál es la solución finalmente elegida, junto con su justificación en función de la legislación y la reglamentación y normativa aplicables." },
+  { id: "1.8", titulo: "Resultados finales", texto: "Se <strong>debe</strong> describir el producto, obra, edificio, instalación y servicio según la solución elegida, indicando cuáles son sus características definitorias y haciendo referencia a los planos y otros elementos del proyecto que lo definen." },
+  { id: "1.9", titulo: "Planificación", texto: "En relación al proceso de materialización del proyecto, se <strong>deben</strong> definir las diferentes etapas, metas o hitos a alcanzar, plazos de entrega y cronogramas o gráficos de programación correspondientes." },
+  { id: "1.10", titulo: "Orden de prioridad entre los documentos", texto: "El autor del proyecto, frente a posibles discrepancias, <strong>debe</strong> establecer el orden de prioridad de los documentos. Si no se especifica otra cosa, el orden de prioridad <strong>debe</strong> ser: 1 Planos; 2 Pliego de condiciones; 3 Presupuesto; 4 Memoria. (En función del tipo de proyecto se <strong>debe</strong> adaptar el orden y los documentos según la legislación específica aplicable.)" }
 ];
 
 /* ---------- 7 Anexos ---------- */
@@ -62,20 +62,20 @@ const ANEXOS_ITEMS = [
   ["Anexos por ámbito del proyecto", "Seguridad (prevención de incendios, sanidad, radiaciones, pública concurrencia); Medio ambiente (acústica, residuos, emisiones); Eficiencia energética; Emplazamiento, geotécnicos, hidráulicos, hidrológicos, pluviométricos; Gestión de residuos; Otros."],
   ["Estudios con entidad propia", "Todos aquellos estudios que deban incluirse por exigencias legales: Estudio Básico de Seguridad y Salud o Estudio de Seguridad y Salud, según corresponda; Estudio de Impacto Ambiental (según la tipología prevista en la legislación vigente)."],
   ["Otros documentos justificativos", "Catálogos de los elementos constitutivos del objeto del proyecto; listados; información en soportes lógicos, magnéticos, ópticos o cualquier otro; maquetas o modelos; otros documentos que se juzguen necesarios."],
-  ["Justificación normativa", "Cada anexo debe contener la justificación del cumplimiento de la normativa legal vigente aplicable y, si procede, de las fórmulas aplicadas para el cálculo."]
+  ["Justificación normativa", "Cada anexo <strong>debe</strong> contener la justificación del cumplimiento de la normativa legal vigente aplicable y, si procede, de las fórmulas aplicadas para el cálculo."]
 ];
 
 /* ---------- 8 Planos ---------- */
 const PLANOS_ITEMS = [
-  "El documento Planos debe iniciarse con un índice que haga referencia a cada uno de los planos, indicando su ubicación en el documento.",
-  "Cada plano debe contener la información gráfica, alfanumérica, de códigos y de escala necesaria para su comprensión y correcta ejecución de lo representado.",
-  "Principios generales de representación, cajetines, indicaciones, escritura, rotulación, acotación, símbolos gráficos, plegado, listas de elementos, escalas, métodos de proyección, formatos y presentación de los elementos gráficos y gestión de la información técnica asistida por ordenador: salvo indicación en contra del autor, según UNE 1027, UNE 1032, UNE 1035, UNE 1039, UNE 1089-1, UNE 1089-2, UNE 1135, UNE 1166-1, UNE-EN ISO 3098-0/2/3/4/5/6, UNE-EN ISO 5455, UNE-EN ISO 5456-1/2/3, UNE-EN ISO 5457, UNE-EN ISO 6433, UNE-EN ISO 10209-2, UNE-EN ISO 11442-1/2/3/4, UNE-EN ISO 81714-1."
+  "El documento Planos <strong>debe</strong> iniciarse con un índice que haga referencia a cada uno de los planos, indicando su ubicación en el documento.",
+  "Cada plano <strong>debe</strong> contener la información gráfica, alfanumérica, de códigos y de escala necesaria para su comprensión y correcta ejecución de lo representado.",
+  "Principios generales de representación, cajetines, indicaciones, escritura, rotulación, acotación, símbolos gráficos, plegado, listas de elementos, escalas, métodos de proyección, formatos y presentación de los elementos gráficos y gestión de la información técnica asistida por ordenador: salvo indicación en contra del autor, según <strong>UNE 1027</strong>, <strong>UNE 1032</strong>, <strong>UNE 1035</strong>, <strong>UNE 1039</strong>, <strong>UNE 1089-1</strong>, <strong>UNE 1089-2</strong>, <strong>UNE 1135</strong>, <strong>UNE 1166-1</strong>, <strong>UNE-EN ISO 3098-0</strong>/2/3/4/5/6, <strong>UNE-EN ISO 5455</strong>, <strong>UNE-EN ISO 5456-1</strong>/2/3, <strong>UNE-EN ISO 5457</strong>, <strong>UNE-EN ISO 6433</strong>, <strong>UNE-EN ISO 10209-2</strong>, <strong>UNE-EN ISO 11442-1</strong>/2/3/4, <strong>UNE-EN ISO 81714-1</strong>."
 ];
 
 /* ---------- 9 Pliego de condiciones ---------- */
 const PLIEGO_ITEMS = [
   ["a) Descripción de las obras, productos, instalaciones o servicios", "Descripción del objeto del proyecto."],
-  ["b) Especificaciones de los materiales y elementos constitutivos", "Listado completo; calidades mínimas a exigir (indicando la norma que contemple el material); pruebas y ensayos a que deben someterse (norma, condiciones de realización, resultados mínimos a obtener)."],
+  ["b) Especificaciones de los materiales y elementos constitutivos", "Listado completo; calidades mínimas a exigir (indicando la norma que contemple el material); pruebas y ensayos a que <strong>deben</strong> someterse (norma, condiciones de realización, resultados mínimos a obtener)."],
   ["c) Ejecución de las obras, productos, instalaciones o servicios", "Condiciones de ejecución."],
   ["d) Reglamentación y normativa aplicables", "Incluyendo las recomendaciones o normas de no obligado cumplimiento que se consideran de necesaria aplicación a criterio del autor."],
   ["e) Aspectos del contrato referidos directamente al proyecto", "Documentos base para la contratación (planos, mediciones, memoria, especificaciones); limitaciones en los suministros (dónde empieza y termina la responsabilidad de suministro y montaje); criterios de medición, valoración y abono; criterios para las modificaciones al proyecto original (procedimiento, aceptación, reflejo en la documentación final); pruebas y ensayos (cuáles y en qué condiciones); garantía de los suministros (alcance, duración, limitaciones); garantía de funcionamiento (alcance, duración, limitaciones)."]
@@ -85,9 +85,9 @@ const PLIEGO_ITEMS = [
 const MEDICIONES_ITEMS = [
   "El documento Mediciones define y determina las unidades de cada partida o unidad de obra que configuran la totalidad del objeto del proyecto, basándose en la información contenida en el documento «Planos».",
   "Debe incluir el número de unidades y definir las características, modelos, tipos y dimensiones de cada partida de obra o elemento del objeto del proyecto.",
-  "Preferentemente se debe utilizar el sistema internacional de unidades conforme a UNE 82100 (partes 0 a 13).",
-  "Se debe utilizar el concepto de partida alzada en aquellas unidades de obra en que no sea posible desglosar, de forma razonable, el detalle de las mismas.",
-  "Si forma parte de un volumen distinto al principal, se debe iniciar con un índice.",
+  "Preferentemente se <strong>debe</strong> utilizar el sistema internacional de unidades conforme a <strong>UNE 82100</strong> (partes 0 a 13).",
+  "Se <strong>debe</strong> utilizar el concepto de partida alzada en aquellas unidades de obra en que no sea posible desglosar, de forma razonable, el detalle de las mismas.",
+  "Si forma parte de un volumen distinto al principal, se <strong>debe</strong> iniciar con un índice.",
   "Debe contener un listado completo de las partidas de obra que configuran la totalidad del proyecto, subdividido en apartados o subapartados correspondientes a las partes más significativas del objeto del proyecto.",
   "Debe servir de base para la realización del Presupuesto."
 ];
@@ -95,33 +95,33 @@ const MEDICIONES_ITEMS = [
 /* ---------- 11 Presupuesto ---------- */
 const PRESUPUESTO_ITEMS = [
   "El Presupuesto determina el coste económico, en unidades monetarias, de la ejecución material del objeto del proyecto, especificando las partidas ejecutadas por contrata y/o por administración.",
-  "Se debe basar en el documento de Mediciones y seguir su misma ordenación.",
+  "Se <strong>debe</strong> basar en el documento de Mediciones y seguir su misma ordenación.",
   "En los proyectos administrativos es suficiente un resumen de las partidas más importantes (obras, cada una de las instalaciones, mobiliario y maquinaria, medidas correctoras, prevención de incendios, etc.).",
-  "El Presupuesto se debe iniciar con un índice que haga referencia a cada uno de los documentos, capítulos y apartados que lo componen.",
+  "El Presupuesto se <strong>debe</strong> iniciar con un índice que haga referencia a cada uno de los documentos, capítulos y apartados que lo componen.",
   "Debe contener: un cuadro de precios unitarios de materiales, mano de obra y elementos auxiliares que componen las partidas o unidades de obra; un cuadro de precios unitarios de las unidades de obra, de acuerdo con el documento de mediciones y con la descomposición correspondiente de materiales, mano de obra, elementos auxiliares y costes indirectos; el presupuesto propiamente dicho con la valoración económica global, desglosada y ordenada según el documento de mediciones.",
   "Debe establecer el alcance de los precios, indicando claramente si incluyen o no: gastos generales y beneficio industrial; impuestos, tasas y otras contribuciones; seguros; costes de certificación y visado; permisos y licencias; cualquier otro concepto que influya en el coste final de materialización del objeto del proyecto."
 ];
 
 /* ---------- 2 Normas para consulta ---------- */
 const NORMAS_CONSULTA = [
-  "UNE 1027, Dibujos técnicos. Plegado de planos.",
-  "UNE 1032, Dibujos técnicos. Principios generales de representación.",
-  "UNE 1035, Dibujos técnicos. Cuadro de rotulación.",
-  "UNE 1039, Dibujos técnicos. Acotación. Principios generales, definiciones, métodos de ejecución e indicaciones especiales.",
-  "UNE 1089-1, Principios generales para la creación de símbolos gráficos. Parte 1: Símbolos gráficos colocados sobre equipos.",
-  "UNE 1089-2, Principios generales para la creación de símbolos gráficos. Parte 2: Símbolos gráficos para utilizar en la documentación técnica de productos.",
-  "UNE 1135, Dibujos técnicos. Lista de elementos.",
-  "UNE 1166-1, Documentación técnica de productos. Vocabulario. Parte 1: Términos relativos a los dibujos técnicos: generalidades y tipos de dibujo.",
-  "UNE 50132, Documentación. Numeración de las divisiones y subdivisiones en los documentos escritos.",
-  "UNE 82100-0 a UNE 82100-13, Magnitudes y unidades (espacio y tiempo, fenómenos periódicos, mecánica, calor, electricidad y magnetismo, luz y radiaciones electromagnéticas, química, física molecular, física atómica y nuclear, reacciones nucleares y radiaciones ionizantes, signos y símbolos matemáticos, números característicos, física del estado sólido).",
-  "UNE-EN ISO 3098-0/2/3/4/5/6, Documentación técnica de productos. Escritura.",
-  "UNE-EN ISO 5455, Dibujos técnicos. Escalas.",
-  "UNE-EN ISO 5456-1/2/3, Dibujos técnicos. Métodos de proyección.",
-  "UNE-EN ISO 5457, Documentación técnica de producto. Formatos y presentación de los elementos gráficos de las hojas de dibujo.",
-  "UNE-EN ISO 6433, Dibujos técnicos. Referencia de los elementos.",
-  "UNE-EN ISO 9000, Sistemas de gestión de la calidad. Fundamentos y vocabulario.",
-  "UNE-EN ISO 10209-2, Documentación técnica de producto. Vocabulario. Parte 2: Términos relacionados con los métodos de proyección.",
-  "UNE-EN ISO 11442-1/2/3, Documentación técnica de productos. Gestión de la información técnica asistida por ordenador."
+  { t: "<strong>UNE 1027</strong> — Dibujos técnicos. Plegado de planos", u: "https://www.google.com/search?q=UNE+1027+dibujos+t%C3%A9cnicos+plegado+planos" },
+  { t: "<strong>UNE 1032</strong> — Dibujos técnicos. Principios generales de representación", u: "https://www.google.com/search?q=UNE+1032+dibujos+t%C3%A9cnicos+principios+generales+representaci%C3%B3n" },
+  { t: "<strong>UNE 1035</strong> — Dibujos técnicos. Cuadro de rotulación", u: "https://www.google.com/search?q=UNE+1035+dibujos+t%C3%A9cnicos+cuadro+rotulaci%C3%B3n" },
+  { t: "<strong>UNE 1039</strong> — Dibujos técnicos. Acotación. Principios generales, definiciones, métodos de ejecución e indicaciones especiales", u: "https://www.google.com/search?q=UNE+1039+dibujos+t%C3%A9cnicos+acotaci%C3%B3n" },
+  { t: "<strong>UNE 1089-1</strong> — Principios generales para la creación de símbolos gráficos. Parte 1: Símbolos gráficos colocados sobre equipos", u: "https://www.google.com/search?q=UNE+1089-1+s%C3%ADmbolos+gr%C3%A1ficos" },
+  { t: "<strong>UNE 1089-2</strong> — Principios generales para la creación de símbolos gráficos. Parte 2: Símbolos gráficos para utilizar en la documentación técnica de productos", u: "https://www.google.com/search?q=UNE+1089-2+s%C3%ADmbolos+gr%C3%A1ficos+documentaci%C3%B3n+t%C3%A9cnica" },
+  { t: "<strong>UNE 1135</strong> — Dibujos técnicos. Lista de elementos", u: "https://www.google.com/search?q=UNE+1135+dibujos+t%C3%A9cnicos+lista+elementos" },
+  { t: "<strong>UNE 1166-1</strong> — Documentación técnica de productos. Vocabulario. Parte 1: Términos relativos a los dibujos técnicos: generalidades y tipos de dibujo", u: "https://www.google.com/search?q=UNE+1166-1+documentaci%C3%B3n+t%C3%A9cnica+productos+vocabulario" },
+  { t: "<strong>UNE 50132</strong> — Documentación. Numeración de las divisiones y subdivisiones en los documentos escritos", u: "https://www.google.com/search?q=UNE+50132+numeraci%C3%B3n+divisiones+subdivisiones+documentos" },
+  { t: "<strong>UNE 82100</strong> (partes 0 a 13) — Magnitudes y unidades", u: "https://www.google.com/search?q=UNE+82100+magnitudes+unidades" },
+  { t: "<strong>UNE-EN ISO 3098</strong> (partes 0, 2, 3, 4, 5, 6) — Documentación técnica de productos. Escritura", u: "https://www.google.com/search?q=UNE-EN+ISO+3098+documentaci%C3%B3n+t%C3%A9cnica+escritura" },
+  { t: "<strong>UNE-EN ISO 5455</strong> — Dibujos técnicos. Escalas", u: "https://www.google.com/search?q=UNE-EN+ISO+5455+dibujos+t%C3%A9cnicos+escalas" },
+  { t: "<strong>UNE-EN ISO 5456</strong> (partes 1, 2, 3) — Dibujos técnicos. Métodos de proyección", u: "https://www.google.com/search?q=UNE-EN+ISO+5456+dibujos+t%C3%A9cnicos+m%C3%A9todos+proyecci%C3%B3n" },
+  { t: "<strong>UNE-EN ISO 5457</strong> — Documentación técnica de producto. Formatos y presentación de los elementos gráficos de las hojas de dibujo", u: "https://www.google.com/search?q=UNE-EN+ISO+5457+formatos+hojas+dibujo" },
+  { t: "<strong>UNE-EN ISO 6433</strong> — Dibujos técnicos. Referencia de los elementos", u: "https://www.google.com/search?q=UNE-EN+ISO+6433+dibujos+t%C3%A9cnicos+referencia+elementos" },
+  { t: "<strong>UNE-EN ISO 9000</strong> — Sistemas de gestión de la calidad. Fundamentos y vocabulario", u: "https://www.google.com/search?q=UNE-EN+ISO+9000+sistemas+gesti%C3%B3n+calidad+fundamentos+vocabulario" },
+  { t: "<strong>UNE-EN ISO 10209-2</strong> — Documentación técnica de producto. Vocabulario. Parte 2: Términos relacionados con los métodos de proyección", u: "https://www.google.com/search?q=UNE-EN+ISO+10209-2+documentaci%C3%B3n+t%C3%A9cnica+vocabulario" },
+  { t: "<strong>UNE-EN ISO 11442</strong> (partes 1, 2, 3) — Documentación técnica de productos. Gestión de la información técnica asistida por ordenador", u: "https://www.google.com/search?q=UNE-EN+ISO+11442+documentaci%C3%B3n+t%C3%A9cnica+informaci%C3%B3n+asistida+ordenador" }
 ];
 
 /* ---------- 3 Definiciones ---------- */
@@ -155,7 +155,7 @@ const VERIF_BLOQUES = [
   { bloque: "Requisitos generales de presentación", items: [
     "Título, código o referencia de identificación, tipo de documento, número de página, total de páginas y fecha en todas las páginas",
     "Título y número de volumen en cada volumen (si hay varios)",
-    "Capítulos y apartados numerados según UNE 50132",
+    "Capítulos y apartados numerados según <strong>UNE 50132</strong>",
     "Lenguaje claro, preciso, coherente; acrónimos presentados la primera vez"
   ] },
   { bloque: "Memoria", items: [
@@ -246,7 +246,7 @@ const DOC_GRUPOS = [
     items: [
       "Título, código, tipo de documento, número de página, total de páginas y fecha en todas las páginas",
       "Título y número de volumen (si hay varios volúmenes)",
-      "Capítulos y apartados numerados según UNE 50132",
+      "Capítulos y apartados numerados según <strong>UNE 50132</strong>",
       "Lenguaje claro, preciso y coherente; acrónimos presentados la primera vez"
     ]
   }
@@ -254,9 +254,9 @@ const DOC_GRUPOS = [
 
 /* ---------- Normas ---------- */
 const NORMAS = [
-  { t: "UNE 157001:2014 — Criterios generales para la elaboración formal de los documentos que constituyen un proyecto técnico", u: "https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0052985" },
-  { t: "UNE 157001:2002 — edición anterior (anulada y sustituida)", u: "https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0031147" },
-  { t: "UNE 50132 — Documentación. Numeración de las divisiones y subdivisiones en los documentos escritos", u: "https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0033294" },
-  { t: "UNE 82100 — Magnitudes y unidades (partes 0 a 13)", u: "https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0030308" },
-  { t: "UNE-EN ISO 9000 — Sistemas de gestión de la calidad. Fundamentos y vocabulario", u: "https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0034858" }
+  { t: "<strong>UNE 157001</strong>:2014 — Criterios generales para la elaboración formal de los documentos que constituyen un proyecto técnico", u: "https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0052985" },
+  { t: "<strong>UNE 157001</strong>:2002 — edición anterior (anulada y sustituida)", u: "https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0031147" },
+  { t: "<strong>UNE 50132</strong> — Documentación. Numeración de las divisiones y subdivisiones en los documentos escritos", u: "https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0033294" },
+  { t: "<strong>UNE 82100</strong> — Magnitudes y unidades (partes 0 a 13)", u: "https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0030308" },
+  { t: "<strong>UNE-EN ISO 9000</strong> — Sistemas de gestión de la calidad. Fundamentos y vocabulario", u: "https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0034858" }
 ];

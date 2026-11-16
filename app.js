@@ -57,10 +57,13 @@ $("#medicionesContenido").innerHTML = ul(MEDICIONES_ITEMS);
 $("#presupuestoContenido").innerHTML = ul(PRESUPUESTO_ITEMS);
 
 /* ---------- Normas de consulta ---------- */
-$("#normasContenido").innerHTML = ul(NORMAS_CONSULTA);
+$("#normasContenido").innerHTML = `<ul>${NORMAS_CONSULTA.map((n) => `<li><a href="${n.u}" target="_blank" rel="noopener">${n.t}</a></li>`).join("")}</ul>`;
 
 /* ---------- Glosario ---------- */
-$("#glosarioContenido").innerHTML = `<dl class="kv">${DEFINICIONES.map(([t, d]) => `<dt>${t}</dt><dd>${d}</dd>`).join("")}</dl>`;
+$("#glosarioContenido").innerHTML = `<div class="tabla-wrap"><table class="tabla">
+  <thead><tr><th>Término</th><th>Definición</th></tr></thead>
+  <tbody>${DEFINICIONES.map(([t, d]) => `<tr><td><strong>${t}</strong></td><td>${d}</td></tr>`).join("")}</tbody>
+</table></div>`;
 
 /* ---------- Verificador ---------- */
 const VERIF_KEY = "une157001-verif";
