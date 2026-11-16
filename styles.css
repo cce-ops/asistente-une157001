@@ -1,0 +1,120 @@
+:root{
+  --bg:#f7f7f5;
+  --card:#ffffff;
+  --ink:#1c1c1a;
+  --muted:#66665f;
+  --line:#e2e2dd;
+  --red:#b3261e;
+  --amber:#9a6700;
+  --green:#1f6b45;
+  --blue:#1d4f8f;
+  --radius:14px;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+
+header.top{background:#141413;color:#fff;padding:26px 0 20px}
+header.top h1{margin:0;font-size:1.5rem;letter-spacing:-.02em}
+header.top .tag{margin:4px 0 0;color:#c9c9c2;font-size:.9rem}
+
+.tabs{display:flex;flex-wrap:wrap;gap:6px;padding-top:18px}
+.tabs .tab{
+  border:1px solid var(--line);background:var(--card);color:var(--ink);
+  padding:9px 14px;border-radius:999px;cursor:pointer;font-size:.9rem;
+}
+.tabs .tab.active{background:#141413;color:#fff;border-color:#141413}
+
+.panel{display:none;padding-top:20px}
+.panel.active{display:block}
+
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px;margin-bottom:18px;
+}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+@media (max-width:880px){.grid2{grid-template-columns:1fr}}
+
+h2{margin:0 0 6px;font-size:1.15rem}
+h3{margin:22px 0 8px;font-size:1rem;border-bottom:1px solid var(--line);padding-bottom:6px}
+h4{margin:14px 0 4px;font-size:.92rem}
+p{margin:8px 0}
+.hint{color:var(--muted);font-size:.88rem}
+.small{font-size:.85rem}
+
+.fld{display:flex;flex-direction:column;gap:5px;margin:12px 0}
+.fld>span{font-size:.85rem;color:var(--muted)}
+.fld input,.fld select,.search{
+  padding:9px 11px;border:1px solid var(--line);border-radius:9px;
+  font:inherit;background:#fff;color:var(--ink);
+}
+.fld input:focus,.fld select:focus,.search:focus{outline:2px solid #c7d6ee;border-color:var(--blue)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:520px){.row{grid-template-columns:1fr}}
+
+.checks{display:flex;flex-direction:column;gap:8px;margin:14px 0}
+.checks label{display:flex;gap:8px;align-items:flex-start;font-size:.92rem}
+.checks input{margin-top:3px}
+
+.btn{
+  border:1px solid var(--line);background:#fff;color:var(--ink);
+  padding:9px 15px;border-radius:9px;cursor:pointer;font:inherit;
+}
+.btn:hover{background:#f0f0ec}
+.btn.primary{background:#141413;color:#fff;border-color:#141413}
+.btn.primary:hover{background:#333}
+.toolbar{display:flex;gap:10px;margin:14px 0}
+
+.aviso{
+  background:#fff8e8;border:1px solid #f0dfb6;color:#5b4708;
+  border-radius:10px;padding:11px 13px;font-size:.9rem;margin:12px 0;
+}
+.hidden{display:none !important}
+
+.result .badge{
+  display:inline-block;padding:4px 11px;border-radius:999px;font-size:.8rem;
+  background:#eee;color:#333;margin-bottom:8px;
+}
+.result .badge.bajo{background:#e7f4ec;color:var(--green)}
+.result .badge.medio{background:#fdf3dd;color:var(--amber)}
+.result .badge.alto{background:#fbe9e7;color:var(--red)}
+.result ul{margin:6px 0 0;padding-left:20px}
+.result li{margin:3px 0;font-size:.92rem}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.92rem;margin:8px 0}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0;font-weight:600}
+
+.tabla{width:100%;border-collapse:collapse;margin:10px 0;font-size:.88rem}
+.tabla th,.tabla td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+.tabla th{background:#f4f4f0;font-weight:600}
+.tabla caption{caption-side:top;text-align:left;font-weight:600;padding:6px 0;color:var(--muted);font-size:.85rem}
+.tabla-wrap{overflow-x:auto}
+
+.tablas details{border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:10px 0;background:#fff}
+.tablas summary{cursor:pointer;font-weight:600}
+.tablas .notas{font-size:.82rem;color:var(--muted);margin-top:6px}
+
+.checklist .grupo{margin:16px 0}
+.checklist .grupo h3{margin-bottom:6px}
+.checklist label{display:flex;gap:9px;align-items:flex-start;font-size:.93rem;padding:4px 0}
+.checklist input{margin-top:4px}
+
+.enlaces{padding-left:20px}
+.enlaces li{margin:7px 0}
+.enlaces a{color:var(--blue)}
+
+.pie{color:var(--muted);font-size:.82rem;padding:26px 18px 40px}
+
+@media print{
+  header.top,.tabs,.toolbar,.btn{display:none}
+  body{background:#fff}
+  .panel{display:none !important}
+  #docs{display:block !important}
+  .card{border:none;padding:0}
+}
